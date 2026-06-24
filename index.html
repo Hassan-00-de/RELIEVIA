@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RELIEVIA LLC – Office Products Retailer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f1f3d;
+      --gold: #c9a84c;
+      --light: #f7f5f0;
+      --gray: #6b7280;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--navy);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--navy);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--white);
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: 1px solid var(--gold);
+      padding: 4px 10px;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 100px 20px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .coming-soon-tag {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 500px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 70px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--white);
+      border-top: 3px solid var(--gold);
+      padding: 35px 30px;
+      flex: 1;
+      min-width: 220px;
+      max-width: 280px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    }
+
+    .card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    .contact {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 60px 20px;
+      margin-top: auto;
+    }
+
+    .contact p {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .contact a {
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 2px;
+    }
+
+    .contact a:hover { color: var(--gold); }
+
+    footer {
+      background: #080f1e;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 16px 20px; }
+      .hero { padding: 70px 20px 60px; }
+      .cards { padding: 50px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">RELIEVIA <span>LLC</span></div>
+    <div class="badge">Est. Wyoming, USA</div>
+  </header>
+
+  <section class="hero">
+    <div class="coming-soon-tag">Coming Soon</div>
+    <h1>U.S. Office Products<br><span>Online Retailer</span></h1>
+    <div class="divider"></div>
+    <p>We are a registered U.S.-based retail company specializing in Office Products, serving customers across major online marketplaces.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <div class="card-icon">🏢</div>
+      <h3>Who We Are</h3>
+      <p>RELIEVIA LLC is a registered Wyoming-based online retail company with EIN and full business credentials.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📦</div>
+      <h3>What We Do</h3>
+      <p>We source and sell quality Office Products across multiple online marketplaces, including Amazon.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <h3>Wholesale</h3>
+      <p>We partner with reputable brands and distributors. Reach out to discuss wholesale opportunities.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <p>Wholesale Inquiries</p>
+    <a href="mailto:ali@relieviapro.com">ali@relieviapro.com</a>
+  </section>
+
+  <footer>
+    &copy; 2025 RELIEVIA LLC — All Rights Reserved
+  </footer>
+
+</body>
+</html>
